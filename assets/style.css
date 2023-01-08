@@ -1,0 +1,280 @@
+/* Scroll Smooth */
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #c4ddff;
+}
+
+.container {
+  width: 1000px;
+  background-color: #0aa1dd;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  width: inherit;
+  position: relative;
+  margin-top: 30px;
+}
+
+nav {
+  width: inherit;
+  padding: 10px 20px 10px 0;
+  background-color: #fa58b6;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+}
+
+nav .brand {
+  float: left;
+}
+
+nav .nav-link {
+  float: right;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  margin-left: 20px;
+  color: #2155cd;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+nav ul li a:hover {
+  color: #79dae8;
+}
+
+.jumbotron {
+  background-color: #ffbde6;
+  padding: 100px 20px 80px;
+  font-size: 25px;
+  text-align: center;
+  color: black;
+}
+
+.jumbotron h1 {
+  margin: 20px 0;
+}
+
+/* Main */
+main {
+  padding: 0px 20px 40px;
+  overflow: auto;
+}
+
+#home,
+#about,
+#education,
+#achievement,
+#date-time {
+  padding-top: 18px;
+}
+
+#content {
+  float: left;
+  width: 70%;
+  line-height: 20px;
+}
+
+.card {
+  width: 100%;
+  padding: 20px 20px;
+  margin-top: 20px;
+  background-color: #79dae8;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+#content .card h2 {
+  text-align: center;
+}
+
+#content .card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+#content .card h2,
+img {
+  margin-bottom: 20px;
+}
+
+/* Education */
+.card .edu {
+  background-color: #e8f9fd;
+}
+
+#education span {
+  font-style: italic;
+}
+
+#education .card .edu img {
+  width: 50px;
+  margin-right: 20px;
+  margin-top: -5px;
+}
+
+#education .card .edu .sekolah {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Achievement */
+.flex-row {
+  display: flex;
+}
+
+#content .card .flex-row img {
+  width: 40%;
+  flex: 1;
+  margin: 5px;
+}
+
+/* Aside */
+aside {
+  padding: 0 0 20px 20px;
+  float: right;
+  width: 30%;
+  text-align: center;
+}
+
+.date-time header,
+.profile header,
+.skill header {
+  margin-top: 0;
+}
+
+.profile h2,
+.skill h2 {
+  text-align: center;
+}
+
+.profile img {
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.skill img {
+  width: 80%;
+}
+
+.skill h2 {
+  margin-bottom: 20px;
+}
+
+.profile table {
+  margin-top: 10px;
+  text-align: left;
+  font-size: 12px;
+}
+
+.profile table td {
+  padding: 3px 0;
+}
+
+.profile table a {
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  background-color: #2155cd;
+  padding: 20px 20px;
+  text-align: center;
+  color: #e8f9fd;
+}
+
+/* Responsive */
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  main {
+    padding-bottom: 20px;
+  }
+  .nav-link {
+    display: none;
+  }
+  .jumbotron {
+    font-size: small;
+  }
+  .container,
+  #content,
+  aside {
+    width: 100%;
+  }
+  .sekolah {
+    font-size: smaller;
+  }
+  .sertif {
+    width: 100% !important;
+  }
+  aside {
+    padding-left: 0;
+  }
+  .date-time {
+    text-align: center;
+  }
+  .img-skill {
+    width: 100px !important;
+    display: inline;
+    margin-bottom: -5px;
+  }
+  .flex-row {
+    display: block;
+    margin-right: 10px;
+  }
+  footer {
+    font-size: x-small;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .jumbotron {
+    font-size: medium;
+  }
+  .container,
+  #content,
+  aside {
+    width: 100%;
+  }
+  aside {
+    padding-left: 0;
+  }
+  .img-skill {
+    width: 100px !important;
+    display: inline;
+    margin-bottom: -5px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+}
+
+/*  X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (max-width: 1400px) {
+}
